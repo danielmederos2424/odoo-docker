@@ -2,7 +2,6 @@ import customtkinter
 from customtkinter import CTkButton
 import os
 import subprocess
-import docker
 from PIL import Image
 
 class App(customtkinter.CTk):
