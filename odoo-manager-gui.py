@@ -242,12 +242,12 @@ class App(customtkinter.CTk):
     def help_window(self):
         help_window = customtkinter.CTkToplevel()
         help_window.title("AYUDA")
-        help_window.geometry("500x550")
+        help_window.geometry("500x650")
         help_window.resizable(False, False)
         screen_width = help_window.winfo_screenwidth()
         screen_height = help_window.winfo_screenheight()
         x = (screen_width - 500) // 2
-        y = (screen_height - 420) // 2
+        y = (screen_height - 650) // 2
         help_window.geometry(f"+{x}+{y}")
         help_window.attributes("-topmost", True)
 
@@ -264,9 +264,14 @@ class App(customtkinter.CTk):
         - El presente programa permite crear, modificar, reiniciar, monitorizar y eliminar instancias de Odoo desplegadas mediante Docker. 
         - La ventana principal muestra todos los contenedores existentes de docker especificando su estado actual, pudiendo así interactuar con ellos mediante los botones correspondientes. 
         - Se podrá también obtener información detallada sobre cada una de las instancias existentes en el botón Info. 
-        - Para poder eliminar una instancia antes deberá detenerla, al realizar esta acción se eliminará el contenedor seleccionado junto con su información y configuración relacionada pero los módulos permanecerán en la carpeta correspondiente. """
+        - Para poder eliminar una instancia antes deberá detenerla, al realizar esta acción se eliminará el contenedor seleccionado junto con su información y configuración relacionada pero los módulos permanecerán en la carpeta correspondiente. 
+        Información más detallada en el archivo 'instrucciones de uso.md' presente en el repositorio de la app o en la carpeta raíz del proyecto """
         message_label = customtkinter.CTkLabel(master=help_window, text=message_text, wraplength=400, font=customtkinter.CTkFont(size=15), pady=5, anchor="w", justify="left")
         message_label.pack()
+        copyright_text = "© Daniel Mederos, 2024. Repo: github.com/Daniel-WICKED/odoo-docker"
+        copyright_label = customtkinter.CTkLabel(master=help_window, text=copyright_text, wraplength=400, font=customtkinter.CTkFont(size=10), pady=25, anchor="w", justify="left")
+        copyright_label.pack()
+
 
     def main_window(self):
         self.welcome_window()
