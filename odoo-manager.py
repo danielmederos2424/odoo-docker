@@ -73,7 +73,7 @@ class App(customtkinter.CTk):
         # Startup verifications
         def verifications():
             docker = check_docker()
-            docker_text = "CHecking if Docker engine is active..."
+            docker_text = "Checking if Docker engine is active..."
             docker_label = customtkinter.CTkLabel(master=start_window, text=docker_text, wraplength=300, font=customtkinter.CTkFont(size=15))
             docker_label.pack()
 
@@ -436,7 +436,7 @@ class App(customtkinter.CTk):
         CTkLabel(self.new_instance_window, text="Admin password (required):").pack(pady=10)
         CTkEntry(self.new_instance_window, textvariable=password_var, show="*").pack(pady=10)
 
-        CTkLabel(self.new_instance_window, text="Apply filter the databases?").pack(pady=10)
+        CTkLabel(self.new_instance_window, text="Apply filter to the databases?").pack(pady=10)
         CTkOptionMenu(self.new_instance_window, variable=db_filter_var, values=["Sí", "No"]).pack(pady=10)
 
         CTkButton(self.new_instance_window, text="Create instance", fg_color="#28a745", hover_color="dark green", command=create_instance).pack(pady=20)
@@ -446,7 +446,7 @@ class App(customtkinter.CTk):
         name_label = customtkinter.CTkLabel(master, font=font, text=name.upper(), anchor="w")
         name_label.grid(row=row, column=0, padx=10, pady=(5, 5), sticky="w")
 
-        status_label = customtkinter.CTkLabel(master, text=f"Estado: {status}", anchor="w")
+        status_label = customtkinter.CTkLabel(master, text=f"Status: {status}", anchor="w")
         status_label.grid(row=row, column=1, padx=10, pady=(5, 5), sticky="w")
 
         buttons_frame = customtkinter.CTkFrame(master, fg_color="transparent")
