@@ -2,6 +2,25 @@
 
 Odoo Manager GUI is a custom Tkinter-based application that allows users to manage multiple Odoo instances using Docker. The application provides an interface to create, update, delete, and view information about Odoo instances.
 
+## Screenshots
+<p align="center">
+  <img src="./1.png" alt="Screenshot 1" width="50%" height="50%">
+</p>
+<p align="center">
+  <img src="./2.png" alt="Screenshot 2" width="50%" height="50%">
+</p>
+<p align="center">
+  <img src="./3.png" alt="Screenshot 3" width="80%" height="80%">
+</p>
+<p align="center">
+  <img src="./4.png" alt="Screenshot 4" width="50%" height="50%">
+</p>
+<p align="center">
+  <img src="./5.png" alt="Screenshot 5" width="50%" height="50%">
+</p>
+
+
+
 ## Features
 
 - **Create Odoo Instances**: Easily create new Odoo instances with customizable options.
@@ -11,7 +30,7 @@ Odoo Manager GUI is a custom Tkinter-based application that allows users to mana
 
 ## Requirements
 
-- Python 3.6 or higher
+- Python 3.10 or higher
 - Docker
 - CustomTkinter
 - PIL (Python Imaging Library)
